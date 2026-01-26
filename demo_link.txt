@@ -1,0 +1,1 @@
+https://jameswillett.dev/getting-started-with-material-for-mkdocs/\#add-yaml-schema-validation
