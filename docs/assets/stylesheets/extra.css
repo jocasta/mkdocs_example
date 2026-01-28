@@ -1,0 +1,44 @@
+/* Hide site name in sidebar */
+.md-nav__title[for="__drawer"] {
+  display: none;
+}
+
+/* ----------------------------------------------------------
+   ACTIVE NAV ITEM ONLY
+   ---------------------------------------------------------- */
+
+.md-nav__item--active > .md-nav__link {
+  background-color: #003cff !important;
+  color: #ffffff !important;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 4px 0;
+}
+
+/* ----------------------------------------------------------
+   INACTIVE NAV ITEMS (explicit reset)
+   ---------------------------------------------------------- */
+
+.md-nav__item:not(.md-nav__item--active) > .md-nav__link {
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 6px 10px;
+  margin: 4px 0;
+}
+
+/* ----------------------------------------------------------
+   OPTIONAL: Reduce nav text size
+   ---------------------------------------------------------- */
+
+.md-nav__link {
+  font-size: 0.65rem;
+}
+
+/* ----------------------------------------------------------
+   SIDEBAR WIDTH
+   ---------------------------------------------------------- */
+
+:root {
+  --md-sidebar-width: 920px;
+  --md-sidebar-width-tablet: 260px;
+}

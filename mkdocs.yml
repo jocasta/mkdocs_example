@@ -2,6 +2,9 @@ site_name: Mikes test site
 site_url: https://mikes-test.example
 theme:
   name: material
+  features:
+    - search.highlight
+    - navigation.tabs.sticky
   font:
     text: Merriweather Sans
     code: Red Hat Mono
@@ -23,6 +26,16 @@ theme:
         name: Light mode
       primary: blue
       accent: deep orange
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+
+# nav:
+#   - Home: index.md
+#   - Examples: 
+#     - Examples/code-examples.md
+#     - Examples/code-tabs.md
 
 markdown_extensions:
   - attr_list
